@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color:azure;           
+        }
+          img{max-width: 60%;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="sayfa1.aspx">İlk Sayfa</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sayfa2.aspx">Mesaj</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sayfa3.aspx">Yorum</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Validation_KONTROLLER.aspx">İletişim</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sayfa4.aspx">Son Sayfa</a>
+  </li>
+</ul>
+   
+    
+
+    <form class="form-group" id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div class="blockquote-footer">
+         <hr />
+    <div class="container-fluid">
+        <p class="text-center"> Bu paragrafta okuduğunuz yazı MasterPage içerisinde bulunduğu için <br />
+        MasterPage kullanılarak oluşturulan her sayfada görünür.</p>
+    </div></div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
